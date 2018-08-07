@@ -13,7 +13,7 @@ $pushID = 'Uf37e7f19f7e89c958f6f548fa04d8f9e';
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello world');
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('smoke is coming');
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
